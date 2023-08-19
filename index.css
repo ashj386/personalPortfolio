@@ -3,20 +3,65 @@ body{
 }
 h2{
     color:aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 20px;
 }
+img {
+    display: block;
+    height:auto;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
 .mainTitle {
     color: coral;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
     text-align: center;
-    
-    font-size: 36px;
-    border: 5px blue;
-    border-style: dashed;
-    height:auto;
-    width: 300px;
     margin: 0 auto;
+    font-size: 45px;
+    height:auto;
+    position: relative;
+    width:max-content;
+    
 }
 
+.mainTitle::before,
+.mainTitle::after{
+    content: '';
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.mainTitle::before{
+    background: black;
+    animation: typewriter 2s steps(13) 1s forwards;
+}
+
+.mainTitle::after{
+    width: 0.125em;
+    background: coral;
+    animation: 
+        typewriter 2s steps(13) 1s forwards,
+        cursorblink 750ms steps(13) infinite;
+}
+
+@keyframes typewriter{
+    to {left:100%;}
+}
+
+@keyframes cursorblink{
+    to{
+        background: transparent;
+    }
+}
 .bio {
     color: white;
     text-align: center;
@@ -33,7 +78,7 @@ h2{
 
 .menu{
     border: 1px solid #fff;
-    width: 1000px;
+    width: 1500px;
     display: flex;
     justify-content: space-around;
 }
