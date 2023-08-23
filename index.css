@@ -5,7 +5,8 @@ h2{
     color:aquamarine;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 img {
     display: block;
@@ -16,14 +17,15 @@ img {
 
 }
 
-
+.mainTitle h1{
+    font-weight: lighter;
+}
 .mainTitle {
     color: coral;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
     text-align: center;
     margin: 0 auto;
-    font-size: 45px;
+    font-size: 65px;
     height:auto;
     position: relative;
     width:max-content;
@@ -42,14 +44,14 @@ img {
 
 .mainTitle::before{
     background: black;
-    animation: typewriter 2s steps(13) 1s forwards;
+    animation: typewriter 1s steps(13) 1s forwards;
 }
 
 .mainTitle::after{
     width: 0.125em;
     background: coral;
     animation: 
-        typewriter 2s steps(13) 1s forwards,
+        typewriter 1s steps(13) 1s forwards,
         cursorblink 750ms steps(13) infinite;
 }
 
@@ -62,15 +64,53 @@ img {
         background: transparent;
     }
 }
-.bio {
-    color: white;
+.aboutme p {
+    color: black;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    width:fit-content;
 
 }
+.aboutme,
+.projects,
+.contact{
+    padding: 37px;
+}
+.aboutme{
+    background-color: #50d0ff;
+}
+.aboutme h2{
+    color: black;
+}
+.projects{
+    background-color: black;
+}
+.container{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
 
-.menu-container{
+.projCard h4{
+    text-align: center;
+}
+.projCard{
+    background: white;
+    display: flex;
+    width: 190px;
+    padding: 10px;
+    border-radius: 10%;
+}
+.contact{
+    background-color: coral;
+}
+
+
+/*.menu-container{
     display: flex;
     justify-content: center;
     
@@ -81,4 +121,4 @@ img {
     width: 1500px;
     display: flex;
     justify-content: space-around;
-}
+}*/
