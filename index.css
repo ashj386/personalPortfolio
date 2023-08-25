@@ -132,6 +132,12 @@ h2{
     .mainTitle{
         font-size: 25px;
     }
+    .contact p{
+        font-size: 11px;
+    }
+    .expList{
+        font-size: 11px;
+    }
     .container {
         flex-direction: column;
         justify-content: center;
