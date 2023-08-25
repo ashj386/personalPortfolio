@@ -128,6 +128,20 @@ h2{
     padding: 10px;
     border-radius: 10%;
 }
+@media screen and (max-width:40em) {
+    .mainTitle{
+        font-size: 35px;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        margin:0 auto;
+    }
+    .projCard{
+        flex-wrap: wrap;
+        width: 85%;
+    }
+}
 .contact{
     background-color: black;
 }
