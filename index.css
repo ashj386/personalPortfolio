@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 h2{
-    color:aquamarine;
+    color:#50d0ff;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
     font-size: 30px;
@@ -13,14 +13,29 @@ h2{
     max-height: 15%;
     float: left;
 }*/
+.socials{
+    padding-bottom: 20px;
+    margin: auto;
+    /*width:min-content;*/
+    width: fit-content;
+}
+.socicons{
+    color:coral;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.2s;
+}
 
+.socicons:hover{
+    color:#50d0ff;
+}
 .mainTitle h1{
     font-weight: lighter;
 }
 .mainTitle {
     color: coral;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    /*text-align: center;*/
     margin: 0 auto;
     font-size: 65px;
     height:auto;
@@ -98,7 +113,7 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -108,6 +123,7 @@ h2{
 .projCard{
     background: white;
     display: flex;
+    flex-wrap: wrap;
     width: 15%;
     padding: 10px;
     border-radius: 10%;
@@ -133,11 +149,17 @@ input[type=text],
 input[type=email] {
     width: 110%;
     color: black;
+    border-radius: 10%;
+    border: 1px solid gray;
+
 }
 
 textarea {
     width: 110%;
     display: inline-block;
+    border-radius: 10%;
+    resize: none;
+    border: 1px solid gray;
 
 
 }
@@ -154,6 +176,9 @@ input[type=submit]{
     font-family: 'Courier New', Courier, monospace;
     background-color: coral;
     width: 110%;
+    border-radius: 10%;
+    font-size: 20px;
+    border: 1px solid black;
 }
 
 /*.menu-container{
