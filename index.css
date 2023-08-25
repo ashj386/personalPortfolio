@@ -8,14 +8,11 @@ h2{
     font-size: 30px;
     text-align: center;
 }
-img {
-    display: block;
-    height:auto;
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
-
-}
+/*.aboutme img{
+    max-width: 25%;
+    max-height: 15%;
+    float: left;
+}*/
 
 .mainTitle h1{
     font-weight: lighter;
@@ -66,16 +63,15 @@ img {
 }
 .aboutme p {
     color: black;
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    width:fit-content;
-
+    /*float: left;*/
 }
 .aboutme,
 .projects,
-.contact{
-    padding: 37px;
+.contact,
+.experience{
+    padding: 30px;
 }
 .aboutme{
     background-color: #50d0ff;
@@ -83,8 +79,19 @@ img {
 .aboutme h2{
     color: black;
 }
+
 .projects{
-    background-color: black;
+    background-color: coral;
+}
+.projects h2{
+    color:black;
+}
+
+.expList{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 15px;
 }
 .container{
     color: black;
@@ -92,7 +99,7 @@ img {
     font-size: 15px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .projCard h4{
@@ -101,14 +108,53 @@ img {
 .projCard{
     background: white;
     display: flex;
-    width: 190px;
+    width: 15%;
     padding: 10px;
     border-radius: 10%;
 }
 .contact{
-    background-color: coral;
+    background-color: black;
+}
+.contact p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 22px;
+    color: white;
 }
 
+.contactform{
+    justify-content: center;
+    display: flex;
+
+    margin: 30px 60px;
+    
+}
+input[type=text],
+input[type=email] {
+    width: 110%;
+    color: black;
+}
+
+textarea {
+    width: 110%;
+    display: inline-block;
+
+
+}
+label{
+    display: inline-block;
+    width: 110%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+input[type=submit]{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: coral;
+    width: 110%;
+}
 
 /*.menu-container{
     display: flex;
